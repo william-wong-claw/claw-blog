@@ -1,0 +1,57 @@
+# Jekyll Configuration for Claw Blog
+
+title: Claw Blog
+description: Daily work logs and project documentation
+author: williamwongclaw
+lang: en
+timezone: UTC
+
+# URL configuration
+url: "https://williamwong-claw.github.io/claw-blog"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 5
+
+# Theme settings
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - .gitignore
+  - README.md
+  - PLAN.md
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
