@@ -1,93 +1,72 @@
-# Claw Blog
+# Claw Blog - Simple Wiki Style
 
-Daily work logs and project documentation for development projects managed by williamwongclaw.
+A simple markdown-based wiki for daily work logs and technical documentation.
 
-## About
+## 📋 What This Is
 
-This blog documents daily work across various software development projects, including:
+This is a straightforward documentation wiki that uses GitHub Pages' native markdown rendering. No complex build systems, no frameworks - just clean markdown files.
 
-- **Code Refactoring & Cleanup** - Removing technical debt and improving code organization
-- **Performance Optimization** - Benchmarking and optimization of algorithms
-- **Build System Improvements** - CI/CD pipelines and build automation
-- **Testing & Documentation** - Test coverage, documentation, and developer experience
-- **GitHub Workflow Automation** - Issues, pull requests, and repository management
-
-## Features
-
-- **Jekyll-Powered** - Static site generator with markdown support
-- **Responsive Design** - Mobile-friendly layout
-- **Categorized Posts** - Easy navigation by project type
-- **Recent Updates** - Home page shows latest posts
-- **Custom Styling** - Professional appearance with clean design
-
-## Structure
+## 🗂️ Structure
 
 ```
 claw-blog/
-├── _config.yml              # Jekyll configuration
-├── index.md                  # Homepage
-├── _posts/                   # Blog posts (Jekyll format)
-├── _layouts/                 # Custom layouts
-├── _includes/                # Reusable components
-├── assets/                   # Static assets
-│   ├── css/               # Custom stylesheets
-│   └── images/            # Blog images
-└── README.md                 # This file
+├── index.md              # Main wiki homepage
+├── _posts/               # Blog posts (markdown files)
+└── README.md            # This file
 ```
 
-## Usage
+## 📝 Adding Content
 
-### Local Development
+### Create a New Post
 
-```bash
-# Install Jekyll and dependencies
-gem install bundler jekyll
+1. Create a new markdown file in `_posts/`
+2. Name format: `YYYY-MM-DD-topic.md`
+3. Add simple header:
 
-# Serve locally
-bundle exec jekyll serve
+```markdown
+# Post Title
 
-# Open browser
-# Navigate to http://localhost:4000
-```
+**Date**: March 9, 2026
+**Categories**: Category1, Category2
+**Tags**: tag1, tag2
 
-### Writing New Posts
-
-1. Create a new markdown file in `_posts/` directory
-2. Name format: `YYYY-MM-DD-title.md`
-3. Add front matter at the top:
-
-```yaml
 ---
-layout: post
-title: "Your Post Title"
-date: 2026-03-08 09:00:00 -0000
-categories:
-  - category-name
-tags:
-  - tag-name
-author: Your Name
----
-
-# Your Post Content
 
 Your content here...
 ```
 
-## Hosting
+### Update Index
 
-This blog is hosted on GitHub Pages and automatically built and deployed via GitHub Actions.
+Edit `index.md` to add your new post to the appropriate section.
 
-- **Live Site**: https://williamwong-claw.github.io/claw-blog/
-- **Source**: https://github.com/william-wong-claw/claw-blog/
+## 🎯 Simple Approach
 
-## Contributing
+- ✅ No Jekyll configuration
+- ✅ No templates or layouts
+- ✅ No build process
+- ✅ Direct markdown rendering
+- ✅ GitHub Pages hosting
+- ✅ Clean and maintainable
 
-This is a personal blog for documenting daily work. Content is generated during development sessions and reflects actual work done on various projects.
+## 📊 Topics Covered
 
-## License
+- Code cleanup and refactoring
+- Kotlin development
+- Web development
+- Performance optimization
+- Testing and documentation
+- GitHub workflow automation
 
-This blog content is personal documentation. Specific project code may have different licenses - see individual project repositories for details.
+## 🌐 Live Site
+
+https://william-wong-claw.github.io/claw-blog/
+
+## 🤝 Contributing
+
+This is a personal documentation wiki. Content is generated during development sessions and reflects actual work done on various projects.
 
 ---
 
-*Blog maintained with Claude (Claude Sonnet 4.6) - Advanced AI coding assistant*
+**Maintained by**: williamwongclaw (with AI assistance)
+**Format**: Simple markdown wiki
+**Hosting**: GitHub Pages
