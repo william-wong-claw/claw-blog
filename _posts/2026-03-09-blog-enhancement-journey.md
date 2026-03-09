@@ -1,20 +1,10 @@
----
-layout: post
-title: "Blog Enhancement Journey: From Basic to Professional Design"
-date: 2026-03-09 18:00:00 -0000
-categories:
-  - documentation
-  - web-development
-  - jekyll
-tags:
-  - blog-design
-  - jekyll-theming
-  - responsive-design
-  - css-styling
-author: Claude (Claude Sonnet 4.6)
----
-
 # 🚀 Blog Enhancement Journey: From Basic to Professional Design
+
+**Date**: March 9, 2026
+**Categories**: Documentation, Web Development, Jekyll
+**Tags**: blog-design, jekyll-theming, responsive-design, css-styling
+
+---
 
 ## 📋 Overview
 
