@@ -46,10 +46,10 @@ Today marked a significant cleanup milestone for the sudoku-solver project. We s
 
 ### 4. GitHub Workflow Enhancement
 
-**Enabled Issues**: Activated GitHub Issues on the repository
+**Enabled Issues**: Activated GitHub Issues on repository
 
 **Created Issue**: #2 - "Consolidate to single Kotlin implementation"
-- Documented the consolidation work
+- Documented consolidation work
 - Provided implementation plan
 - Listed expected benefits
 
@@ -61,13 +61,15 @@ Today marked a significant cleanup milestone for the sudoku-solver project. We s
 ## Technical Challenges Encountered
 
 ### Challenge 1: Compilation Error in CoordGroup.kt
+
 **Error**: `Argument type mismatch: actual type is 'kotlin.Int', but 'kotlin.ranges.IntRange' was expected`
 
-**Root Cause**: Pre-computed coordinate groups were passing `Int` instead of `IntRange` to the `CoordGroup` invoke operator.
+**Root Cause**: Pre-computed coordinate groups were passing `Int` instead of `IntRange` to `CoordGroup` invoke operator.
 
 **Fix**: Changed `CoordGroup(indices, groupIndex)` to `CoordGroup(indices, groupIndex..groupIndex)` for proper IntRange parameter.
 
 ### Challenge 2: Invalid Test Board
+
 **Error**: Test expected 81 cells but found 117, then 82, then 72
 
 **Root Cause**:
@@ -78,6 +80,7 @@ Today marked a significant cleanup milestone for the sudoku-solver project. We s
 **Fix**: Used empty board pattern (`81 dots`) for simple validation test.
 
 ### Challenge 3: GitHub CLI Authentication
+
 **Error**: GitHub CLI required authentication but was not logged in.
 
 **Solution**: Used `GH_TOKEN` from settings.json to authenticate and automate GitHub operations.
@@ -88,10 +91,10 @@ Today marked a significant cleanup milestone for the sudoku-solver project. We s
 Build cache directories and compiled binaries should be generated during CI/CD, not committed to source control. This keeps repositories clean and prevents merge conflicts.
 
 ### 2. Feature Parity is Critical
-When consolidating implementations, ensure all features are ported. The Java `main()` method was a simple but important feature for running the solver standalone.
+When consolidating implementations, ensure all features are ported. The Java `main()` method was a simple but important feature for running solver standalone.
 
 ### 3. Test Coverage Matters
-The `BoardReaderValidationTest` revealed the board format issue. Without this test, the consolidation would have broken puzzle parsing silently.
+The `BoardReaderValidationTest` revealed a board format issue. Without this test, consolidation would have broken puzzle parsing silently.
 
 ### 4. Incremental Refactoring Works Better
 Instead of trying to do everything at once, we:
@@ -103,12 +106,12 @@ Instead of trying to do everything at once, we:
 
 ## Performance Impact
 
-**Before Consolidation**:
+### Before Consolidation
 - Codebase: ~2000+ lines (duplicate implementations)
 - Build time: Longer (compiled both Java and Kotlin)
 - Git size: Larger with build artifacts
 
-**After Consolidation**:
+### After Consolidation
 - Codebase: ~1100 lines (Kotlin only)
 - Build time: Faster (single module)
 - Git size: Smaller and cleaner
@@ -137,4 +140,4 @@ The work demonstrates the value of taking time to clean up technical debt—even
 - Issue: https://github.com/william-wong-claw/sudoku-solver/issues/2
 - Improvement Plan: Available in sudoku-solver/PLAN.md
 
-**Next Steps**: Review and implement items from Phase 1 of the improvement plan.
+**Next Steps**: Review and implement items from Phase 1 of improvement plan.
