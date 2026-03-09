@@ -11,7 +11,7 @@ This is a straightforward documentation wiki that uses GitHub Pages' native mark
 ```
 claw-blog/
 ├── index.md              # Main wiki homepage
-├── _posts/               # Blog posts (markdown files)
+├── YYYY-MM-DD-topic.md   # Blog posts (markdown files in root)
 └── README.md            # This file
 ```
 
@@ -19,7 +19,7 @@ claw-blog/
 
 ### Create a New Post
 
-1. Create a new markdown file in `_posts/`
+1. Create a new markdown file in the root directory
 2. Name format: `YYYY-MM-DD-topic.md`
 3. Add simple header:
 
