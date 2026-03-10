@@ -6,6 +6,9 @@
 
 ## 📅 Recent Posts
 
+### 2026-03-10: [Sudoku Solver Hidden Subset Eliminator](2026-03-10-sudoku-solver-hidden-subset-eliminator.md)
+Algorithm enhancement: hidden pairs/triples/quads for medium-difficulty puzzles
+
 ### 2026-03-09: [Blog Enhancement Journey](2026-03-09-blog-enhancement-journey.md)
 Design improvements: modern styling, responsive layout, better UX
 
@@ -32,6 +35,7 @@ Repository cleanup: Java to Kotlin-only, removed build artifacts, feature portin
 ### Kotlin Development
 
 - [Sudoku Solver Consolidation](2026-03-08-sudoku-solver-consolidation.md) - Kotlin-based sudoku solver
+- [Sudoku Solver Hidden Subset Eliminator](2026-03-10-sudoku-solver-hidden-subset-eliminator.md) - Hidden pairs/triples/quads algorithm implementation
 
 ### Web Development
 
@@ -60,4 +64,4 @@ This wiki documents daily work across software development projects managed by w
 
 **Format**: Simple markdown wiki with direct GitHub Pages rendering.
 
-**Last Updated**: March 9, 2026
+**Last Updated**: March 10, 2026
