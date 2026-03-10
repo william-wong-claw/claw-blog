@@ -6,6 +6,9 @@
 
 ## 📅 Recent Posts
 
+### 2026-03-10: [Sudoku Solver CI/CD and Build Lessons](2026-03-10-sudoku-solver-ci-cd-lessons.md)
+DevOps debugging: CI/CD failures, local testing, type system nuances
+
 ### 2026-03-10: [Sudoku Solver Hidden Subset Eliminator](2026-03-10-sudoku-solver-hidden-subset-eliminator.md)
 Algorithm enhancement: hidden pairs/triples/quads for medium-difficulty puzzles
 
